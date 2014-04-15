@@ -1,0 +1,27 @@
+{
+  "name": "image-plucker",
+  "version": "0.1.0",
+  "description": "Plucks out images from a stream.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kennethklee/node-image-plucker.git"
+  },
+  "keywords": [
+    "png",
+    "stream",
+    "ffmpeg"
+  ],
+  "author": "Kenneth Lee <kennethkl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennethklee/node-image-plucker/issues"
+  },
+  "homepage": "https://github.com/kennethklee/node-image-plucker"
+}
