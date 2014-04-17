@@ -1,7 +1,7 @@
 node-image-plucker
 ==================
 
-Plucks images from a png output stream.
+Plucks images from an image output stream. Supports `png` and `jpeg`.
 
 Ideal for ffmpeg image2pipe output.
 
@@ -23,6 +23,7 @@ var plucker = require('image-plucker'),
     counter = 0,
     ffmpeg = spawn('ffmpeg', ['-i', 'rtmp://10.0.0.3:1935/live/cam.stream_360p', '-vcodec', 'png', '-f', 'image2pipe', '-']);
 
+// You can replace 'png' with 'jpeg' for jpeg images.
 plucker(ffmpeg.stdout, 'png', function (error, image) {
     counter++
     fs.writeFile('file'+counter+'.png', image);
